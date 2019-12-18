@@ -2,8 +2,7 @@
     padding-left: 100px;
     padding-right: 100px;
     display:grid;
-    grid-template-columns: repeat(3,1fr);
-    
+    grid-template-columns: repeat(3,1fr);  
   }
   @media(max-width:1200px){
     #root {

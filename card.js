@@ -14,7 +14,6 @@ for(var i=0;i<d2.length;i++){
 const card=document.createElement('div')
 card.setAttribute('class','card')
 
-
 const image=document.createElement('img')
 image.src=d2[i].avatar;
 image.setAttribute('class','img')

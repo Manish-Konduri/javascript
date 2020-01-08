@@ -1,0 +1,108 @@
+#root {
+    padding-left: 100px;
+    padding-right: 100px;
+    /* display: inline-block; */
+    display:grid; 
+     grid-template-columns: repeat(3,1fr);
+    
+  }
+  @media(max-width:1200px){
+    #root {
+          grid-template-columns: repeat(2,1fr);
+        
+      }
+  }
+  @media(max-width:600px){
+    #root {
+          grid-template-columns: repeat(1,1fr);
+        
+      }
+  }
+  .card{
+   width:300px;
+   border:solid black;
+   border-radius:10px;
+  margin-right: 25px;
+   margin-top:30px;
+   box-shadow: 5px 10px 18px rgb(119, 70, 79);
+   padding:10px;
+   display:inline-block;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container{
+    padding: 2px 16px;
+}
+.img{
+    display: block;
+    padding:5px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 50px;
+    border:2px solid black;
+}
+
+h1{
+    padding:2px;
+    font-size:14px;
+}
+#loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 45px;
+  margin:15px;
+  position:relative;
+  left:45%;
+  height: 45px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+body {
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+/* #button {
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin-top:40px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: block; 
+    text-decoration: none;
+    cursor: pointer;
+  } */
+  .profileImage {
+    display: block;
+    padding:5px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(83, 17, 17);
+    border-radius: 50%;
+    background: rgb(166, 143, 219);
+    font-size: 55px;
+    color: #fff;
+    text-align: center;
+    line-height: 110px;
+  }
+  /* #button:hover {opacity: 1} */

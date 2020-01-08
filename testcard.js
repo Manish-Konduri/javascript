@@ -1,7 +1,12 @@
 var j = 6;
 var d2;
 var k=0;
-const app = document.getElementById('root');
+const app = document.createElement('div');
+app.setAttribute('id','root')
+
+// const card = document.createElement('div');
+// card.setAttribute('id','root')
+document.body.appendChild(app)
 function calling(loadmore) {
     var xhr = new XMLHttpRequest();
     var v = "https://randomuser.me/api/?results=100"
@@ -52,7 +57,6 @@ function addingData(i){
     
                     const details = document.createElement('div')
                     const image = document.createElement('img')
-                    const imagereplace = document.createElement('h2')
                     // i.picture.large=null
                     if (i.picture.large) {
                         image.src = i.picture.large;
@@ -103,7 +107,7 @@ function addingData(i){
                     p.textContent = i.email
     
                     card.appendChild(image);
-                    details.appendChild(imagereplace)
+                   
                     details.appendChild(h1)
                     details.appendChild(p)
                     card.appendChild(details);

@@ -25,7 +25,7 @@ function calling(loadmore) {
         // }
     }
 
-    xhr.send();
+    xhr.send();hidden
  
 }
 function calculating(){
@@ -37,16 +37,17 @@ function calculating(){
         }
         console.log(i)
         addingData(d2[i]);
+        loading();
     }
     j+=6;
 }
 function loading(){
-    document.getElementById("loader").style.visibility = "visible";
+    document.getElementById("loader").style.visibility = "hidden";
 }
 window.onscroll = function() {
     this.console.log(window.innerHeight+" "+ window.scrollY+" "+document.body.scrollHeight)
     if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
-        document.getElementById("loader").style.visibility = "hidden";
+        document.getElementById("loader").style.visibility = "visible";
         calculating()
 
     }

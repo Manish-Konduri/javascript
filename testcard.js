@@ -41,12 +41,12 @@ function calculating(){
     j+=6;
 }
 function loading(){
-    document.getElementById("loader").style.visibility = "hidden";
+    document.getElementById("loader").style.visibility = "visible";
 }
 window.onscroll = function() {
     this.console.log(window.innerHeight+" "+ window.scrollY+" "+document.body.scrollHeight)
     if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
-        document.getElementById("loader").style.visibility = "visible";
+        document.getElementById("loader").style.visibility = "hidden";
         calculating()
 
     }
